@@ -29,4 +29,32 @@ class TaxCalculator
     @buyer_type = buyer_type
     @service_location = service_location
   end
+
+  # setting up the task calculator method
+  def calculate_tax
+    # testing for cases relating to product_type
+    case product_type
+    when 'good'
+      # the case the product type is goods, we check for the buyers location and buyer type either individual or company
+
+    when 'service'
+      # the case the product_type is service, we check if it's an onsite service or digital service
+    else
+      "Invalid product type"
+    end
+  end
+
+
+  def goods(buyer_location, buyer_type)
+
+  end
+
+
+  def digital_service(buyer_location, buyer_type)
+  
+  end
+
+  def onsite_service(service_location)
+
+  end
 end
